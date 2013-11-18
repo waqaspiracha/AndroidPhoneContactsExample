@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.84"
+        android:gravity="center"
+        android:text="Contacts And Messages Information"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.71"
+        android:gravity="center"
+        android:text="Cont" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/getContacts"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:onClick="fetchContacts"
+            android:text="Get Conts" />
+
+        <Button
+            android:id="@+id/getMsgs"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Get Msgs" />
+
+        <Button
+            android:id="@+id/getApps"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:text="Get Apps" />
+
+        <Button
+            android:id="@+id/readText"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:minWidth="50dp"
+            android:text="Read Files" />
+
+        <Button
+            android:id="@+id/uploadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Upload" />
+    </LinearLayout>
+
+</LinearLayout>
